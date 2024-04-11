@@ -1,0 +1,14 @@
+.body {
+  background-color: beige;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  margin: auto;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+}

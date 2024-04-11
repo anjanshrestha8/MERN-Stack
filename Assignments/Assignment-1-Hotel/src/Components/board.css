@@ -1,0 +1,16 @@
+@import "./reset.css";
+
+.image-wrapper {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.dec {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-weight: bold;
+}
