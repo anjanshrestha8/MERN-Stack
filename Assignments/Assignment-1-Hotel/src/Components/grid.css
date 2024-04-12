@@ -4,12 +4,20 @@
   background-color: white;
   margin-top: 2rem;
   padding: 1rem;
+  transition: all 300ms ease-in-out;
+}
+.card-wrapper :hover {
+  cursor: pointer;
+  box-shadow: 10px 11px 19px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 11px 19px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 19px -10px rgba(0, 0, 0, 0.75);
 }
 .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 h3 {
   color: rgb(0, 42, 255);
 }
@@ -45,7 +53,8 @@ p {
 
 .end {
   display: flex;
-  gap: 9rem;
+  align-items: center;
+  justify-content: space-between;
 }
 .rate {
   color: #06b217;

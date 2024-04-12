@@ -1,3 +1,9 @@
+main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
 .body {
   background-color: beige;
   padding: 2rem;
@@ -8,7 +14,7 @@
 }
 
 .grid-wrapper {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 3rem;
 }

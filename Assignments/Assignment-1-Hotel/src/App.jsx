@@ -15,38 +15,40 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="body">
-          <Navigation />
+        <main>
+          <div className="body">
+            <Navigation />
 
-          <Board image={bg} />
+            <Board image={bg} />
 
-          <div className="grid-wrapper">
-            <Grid
-              image={hotel1}
-              location="Chitwan, Shauraha"
-              rating={9.0}
-              rate={299}
-            />
-            <Grid
-              image={hotel2}
-              location="Chitwan, Shauraha"
-              rating={7.0}
-              rate={150}
-            />
-            <Grid
-              image={hotel3}
-              location="Kathmandu, Thamel "
-              rating={5.0}
-              rate={70}
-            />
-            <Grid
-              image={hotel4}
-              location="Kathmandu, Dallu"
-              rating={9.0}
-              rate={199}
-            />
+            <div className="grid-wrapper">
+              <Grid
+                image={hotel1}
+                location="Chitwan, Shauraha"
+                rating={9.1}
+                rate={299}
+              />
+              <Grid
+                image={hotel2}
+                location="Chitwan, Shauraha"
+                rating={7.1}
+                rate={150}
+              />
+              <Grid
+                image={hotel3}
+                location="Kathmandu, Thamel "
+                rating={5.1}
+                rate={70}
+              />
+              <Grid
+                image={hotel4}
+                location="Kathmandu, Dallu"
+                rating={9.1}
+                rate={199}
+              />
+            </div>
           </div>
-        </div>
+        </main>
       </>
     );
   }
