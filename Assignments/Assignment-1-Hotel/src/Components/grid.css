@@ -17,6 +17,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.card > p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
 h3 {
   color: rgb(0, 42, 255);
@@ -36,7 +40,7 @@ h3 {
   column-gap: 10px;
 }
 
-p {
+.location-icon > p {
   font-size: 0.7rem;
   color: rgb(31, 63, 224);
 }

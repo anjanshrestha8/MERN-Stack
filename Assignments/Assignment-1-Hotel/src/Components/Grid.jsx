@@ -13,7 +13,7 @@ class Grid extends React.Component {
           <div>
             <img src={this.props.image} alt="" />
             <div className="card">
-              <h4>Hotel Earth Light</h4>
+              <p>{this.props.hotelName}</p>
               <button className="btn">{this.props.rating}</button>
             </div>
             <br />
