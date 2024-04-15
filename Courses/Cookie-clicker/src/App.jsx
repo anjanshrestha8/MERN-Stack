@@ -12,14 +12,15 @@ class App extends React.Component {
 
   // fat function
   increment = () => {
-    this.setState({
-      counter: this.state.counter + 1,
-    });
+    this,
+      this.setState({
+        counter: this.state.counter + 1,
+      });
     console.log(this.counter);
   };
 
   render() {
-    console.log("render");
+  
 
     return (
       <>
