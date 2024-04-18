@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+.inner-button {
+  display: flex;
+  gap: 2rem;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  position: fixed;
+  border-radius: 30px;
+  /* background-color: red; */
+}
+.title {
+  color: black;
+  
+}
