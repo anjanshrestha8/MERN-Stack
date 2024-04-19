@@ -13,8 +13,10 @@
 .button {
   display: flex;
   background-color: rebeccapurple;
-  height: 200px;
-  width: 200px;
+  gap: 3rem;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
 }
 img {
   width: 100%;
