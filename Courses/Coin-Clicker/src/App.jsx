@@ -1,7 +1,7 @@
 import React from "react";
+import "./app.css";
 import sad from "./assets/images/sad.svg";
 import coin from "./assets/images/coin.jpeg";
-import "./app.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,28 +12,39 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {}
-
   render() {
     return (
       <>
-        <div className="header">
-          <h1>Make the character happy!!!!!!</h1>
-          <p>Tips: click the coin</p>
-          <p>Balance:{this.state.balance}</p>
-        </div>
+        <main>
+          <div className="header">
+            <h1>Coin Clicker !</h1>
+            <h2>Make the character happy..😀😀</h2>
+            <p>Tip: Click coin to increase the balance..</p>
 
-        <div className="button">
-          <img src={sad} alt="" />
-          <img
-            src={coin}
-            alt=""
-            onClick={
-              this.setState({
-              balance: this.state.balance + 1000,
-            })}
-          />
-        </div>
+            <h3>Bank Balance: Rs {this.state.balance}</h3>
+          </div>
+
+          <div className="image-wrapper">
+            <div className="button">
+              {this.state.balance > 50000 ? (
+                <img src={sad} alt="" />
+              ) : (
+                <img src={coin} alt="" />
+              )}
+            </div>
+            <div className="button">
+              <img
+                src={coin}
+                alt=""
+                onClick={() => {
+                  this.setState({
+                    balance: this.state.balance + 1000,
+                  });
+                }}
+              />
+            </div>
+          </div>
+        </main>
       </>
     );
   }

@@ -1,0 +1,15 @@
+.navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.left {
+  display: flex;
+  gap: 3rem;
+}
+
+.left > :last-child >h1{
+    
+}
