@@ -1,0 +1,35 @@
+.card-wrapper {
+  height: 20vh;
+  background-color: rgb(173, 201, 225);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 10px;
+  transition: all ease-in-out 300ms;
+}
+.card-wrapper:hover {
+  box-shadow: 10px 7px 10px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 7px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 10px -5px rgba(0, 0, 0, 0.75);
+  background-color: rgb(244, 166, 244);
+  cursor: pointer;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+span {
+  color: rgb(117, 8, 103);
+  font-weight: bold;
+  font-style: italic;
+}

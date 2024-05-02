@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./reset.css";
+
+main {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1b21;
+}
+
+h1 {
+  color:white;
+  font-size: 60px;
+}
+h1 > span {
+  color:wheat;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.button-wrapper {
+  margin: 0 auto;
+  padding: 5px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,18 @@
+button {
+  padding: 5px;
+  max-width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.reset {
+  background-color: burlywood;
+  color: black;
+  cursor: pointer;
+  font-size: bold;
+}
+.reset:hover {
+  background-color: grey;
+  color: white;
+}
