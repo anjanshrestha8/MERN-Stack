@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./assets/css/App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Card from "./Components/Card";
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: 0,
+      isActive: false,
+    };
+    this.interval;
+  }
+  startTimer = () => {
+    this.setState({ isActive: true });
+    this.interval = setInterval(() => {
+      this.setState({
+        time: this.state.time + 1,
+      });
+    }, 1000);
+  };
+  stopTimer = () => {
+    console.log("Stopped");
+    clearInterval(this.interval);
+    this.setState({ isActive: false });
+  };
+  resetTimer = () => {
+    console.log("resettimer");
+    clearInterval(this.interval);
+    this.setState({ time: 0, isActive: false });
+  };
+  display = (time) => {
+    const minute = Math.floor(time / 60);
+    const second = Math.floor(time % 60);
+
+    return `${minute.toString().padStart(2, "0")} min : ${second
+      .toString()
+      .padStart(2, "0")} sec`;
+  };
+  render() {
+    console.log(this.state.isActive);
+
+    return (
+      <>
+        <div className="main-container">
+          <Card
+            display={this.display(this.state.time)}
+            startTimer={this.startTimer}
+            stopTimer={this.stopTimer}
+            resetTimer={this.resetTimer}
+          />
+          {/* <Timer /> */}
+        </div>
+      </>
+    );
+  }
 }
 
-export default App
+export default App;

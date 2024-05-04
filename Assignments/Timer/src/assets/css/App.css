@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+.main-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}

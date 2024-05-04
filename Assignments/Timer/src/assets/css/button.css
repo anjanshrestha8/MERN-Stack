@@ -1,0 +1,41 @@
+.btn {
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: black;
+  border: 1px solid black;
+  color: whitesmoke;
+  transition: all 300ms ease-in-out;
+}
+.btn-reset:hover {
+  background-color: grey;
+  border: 1px solid black;
+}
+
+.btn-start {
+  background-color: rgb(37, 205, 11);
+  border: 1px solid rgb(37, 205, 11);
+  color: rgb(255, 255, 255);
+  transition: all 300ms ease-in-out;
+}
+.btn-start:hover {
+  background-color: rgb(101, 179, 89);
+  border: 1px solid black;
+}
+.btn-stop {
+  background-color: rgb(241, 44, 44);
+  border: 1px solid rgb(241, 44, 44);
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+.btn-stop:hover {
+  background-color: rgb(238, 97, 97);
+  border: 1px solid black;
+}
