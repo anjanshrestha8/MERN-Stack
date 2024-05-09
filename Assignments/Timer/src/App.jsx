@@ -15,6 +15,7 @@ class App extends React.Component {
   startTimer = () => {
     this.setState({ isActive: true });
     this.interval = setInterval(() => {
+    
       this.setState({
         time: this.state.time + 1,
       });
@@ -23,7 +24,6 @@ class App extends React.Component {
   stopTimer = () => {
     console.log("Stopped");
     clearInterval(this.interval);
-    this.setState({ isActive: false });
   };
   resetTimer = () => {
     console.log("resettimer");
