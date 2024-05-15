@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+.user-card {
+  background-color: rgb(245, 100, 131);
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Poetsen One";
+  color: white;
+  margin-bottom: 2rem;
+}
