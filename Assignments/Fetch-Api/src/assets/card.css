@@ -26,11 +26,11 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-/* .card-wrapper :hover {
+.card-wrapper:hover {
   box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.75);
-} */
+}
 
 span {
   background-color: whitesmoke;
