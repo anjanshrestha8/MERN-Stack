@@ -1,11 +1,13 @@
 import { useState } from "react";
+import Card from "./Components/Card";
+import "./assets/css/index.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
   const addValue = () => {
     setCount((prev) => {
-      return prev + 1;
+      return prev + 1000;
     });
   };
 
@@ -14,20 +16,15 @@ function App() {
       if (prev <= 0) {
         return 0;
       } else {
-        return prev - 1;
+        return prev - 500;
       }
     });
   };
   return (
     <>
-      <h2>This is simple Counter App and Understanding hooks............</h2>
-
-      <h1>Counter : {count}</h1>
-
-      <button onClick={addValue}>Add value</button>
-      <br />
-      <br />
-      <button onClick={desValue}>Dec value</button>
+      <div className="main-wrapper">
+        <Card count={count} add={addValue} des={desValue} />
+      </div>{" "}
     </>
   );
 }

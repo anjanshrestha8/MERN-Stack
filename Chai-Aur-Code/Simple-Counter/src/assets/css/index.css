@@ -1,0 +1,23 @@
+@import "./reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+* {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(132, 132, 132);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper {
+  background-color: aliceblue;
+  padding: 11px;
+  border-radius: 8px;
+}
