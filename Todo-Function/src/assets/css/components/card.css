@@ -1,0 +1,15 @@
+.card-wrapper {
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 6px;
+}
+ul > li {
+  list-style: none;
+}
+.checkbox {
+  width: 20px;
+}

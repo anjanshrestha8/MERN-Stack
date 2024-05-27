@@ -6,15 +6,13 @@ import User from "./User";
 function App() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => {
-        return response.json();
-      })
-      .then((post) => {
-        setPosts(post);
-      });
-  });
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => {
+      return response.json();
+    })
+    .then((post) => {
+      setPosts(post);
+    });
 
   return (
     <>

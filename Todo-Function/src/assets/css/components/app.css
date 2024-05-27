@@ -1,0 +1,33 @@
+.main-container {
+  max-width: 60rem;
+  margin: 2rem auto;
+  background-color: rgb(75, 75, 75);
+  padding: 11px;
+  border-radius: 11px;
+}
+.header-section {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+}
+.input-section {
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
