@@ -20,7 +20,7 @@ function App() {
     const newArray = task.filter((filterItem, filterIndex) => {
       return filterIndex !== index;
     });
-    console.log(newArray);
+    setTask(newArray);
   };
   return (
     <>

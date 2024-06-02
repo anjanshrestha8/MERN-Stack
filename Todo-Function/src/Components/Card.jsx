@@ -11,17 +11,21 @@ function Card(props) {
         </div>
         <div>
           <ul>
-            <li>{props.name}</li>
-            <Button
-              className="btn btn-edit"
-              value="Edit"
-              onclick={props.editItem}
-            />
-            <Button
-              className="btn btn-delete"
-              value="Delete"
-              onclick={props.deleteItem}
-            />
+            <li>
+              {props.name}
+              <div className="button-wrapper">
+                <Button
+                  className="btn btn-edit"
+                  value="Edit"
+                  onclick={props.editItem}
+                />
+                <Button
+                  className="btn btn-delete"
+                  value="Delete"
+                  onclick={props.deleteItem}
+                />
+              </div>
+            </li>
           </ul>
         </div>
       </div>

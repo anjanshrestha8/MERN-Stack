@@ -13,3 +13,10 @@ ul > li {
 .checkbox {
   width: 20px;
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+.button-wrapper {
+  display: flex;
+}

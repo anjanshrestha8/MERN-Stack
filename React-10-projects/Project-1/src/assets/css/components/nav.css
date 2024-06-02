@@ -1,0 +1,46 @@
+.navigation-wrapper {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  padding: 6px 11px;
+  width: 6rem;
+  height: 3rem;
+}
+
+.navigation > nav > ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.navigation > nav > ul > li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login > button {
+  background-color: #d01c28;
+  padding: 6px 11px;
+  border-radius: 1px;
+  border: none;
+  color: whitesmoke;
+  width: 75px;
+  height: 31px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+}
