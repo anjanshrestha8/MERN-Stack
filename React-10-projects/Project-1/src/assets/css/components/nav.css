@@ -18,10 +18,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-.navigation > nav > ul > li {
-  text-decoration: none;
   list-style: none;
+}
+.navigation > nav > ul > li > a {
+  text-decoration: none;
   font-family: "Poppins";
   font-weight: 500;
   color: #2e2e2e;

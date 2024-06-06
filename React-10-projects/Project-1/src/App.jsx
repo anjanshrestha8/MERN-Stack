@@ -3,9 +3,12 @@ import LandingPage from "./Components/LandingPage";
 import Nav from "./Components/Nav";
 import ProductsCard from "./Components/ProductsCard";
 import "./assets/css/components/app.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 
 function App() {
-  const [allProducts, setAllProducts] = useState({});
+  const [allProducts, setAllProducts] = useState([]);
   const url = "https://fakestoreapi.com/products";
 
   useEffect(() => {
@@ -14,7 +17,6 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setAllProducts(data);
       });
   }, []);
@@ -25,21 +27,35 @@ function App() {
         <section className="navigation-section">
           <Nav />
         </section>
-        <section className="hero-section">
-          <LandingPage />
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />}></Route>
+            <Route path="/products" element={<ProductsCard />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contacts" element={<Contact />}></Route>
+          </Routes>
+        </BrowserRouter>
+
+        <section className="product-section-wrapper">
+          <h1>OUR PRODUCTS</h1>
+          <div className="product-section">
+            {allProducts.map((item, index) => {
+              return (
+                <ProductsCard
+                  key={index}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                  price={item.price}
+                  id={item.id}
+                />
+              );
+            })}
+          </div>
         </section>
 
-        <section className="product-section">
-          {allProducts?.map((item, index) => {
-            <ProductsCard
-              key={index}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              price={item.price}
-            />;
-          })}
-        </section>
+        <section></section>
       </main>
     </>
   );

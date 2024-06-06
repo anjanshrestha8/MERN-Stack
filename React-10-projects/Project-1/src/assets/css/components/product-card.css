@@ -1,0 +1,22 @@
+.card-wrapper {
+  padding: 13px 13px;
+  border-radius: 6px;
+  transition: all 300ms ease-in-out;
+}
+.card-wrapper:hover {
+  background-color: rgb(230, 226, 226);
+}
+
+.product-wrapper {
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 3rem;
+  justify-content: center;
+  background-color: white;
+}
+
+.product-image {
+  width: 10rem;
+}

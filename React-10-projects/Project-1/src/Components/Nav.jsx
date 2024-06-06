@@ -1,5 +1,6 @@
 import logo from "../assets/images/brand_logo.png";
 import "../assets/css/components/nav.css";
+
 function Nav() {
   return (
     <>
@@ -10,10 +11,18 @@ function Nav() {
         <div className="navigation">
           <nav>
             <ul>
-              <li>MENU</li>
-              <li>PRODUCTS</li>
-              <li>ABOUT</li>
-              <li>CONTACTS</li>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li>
+                <a href="/products">PRODUCTS</a>
+              </li>
+              <li>
+                <a href="/about">ABOUT</a>
+              </li>
+              <li>
+                <a href="/contacts">CONTACTS</a>
+              </li>
             </ul>
           </nav>
         </div>

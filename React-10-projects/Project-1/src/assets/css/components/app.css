@@ -2,3 +2,14 @@ main {
   max-width: 70rem;
   margin: 0 auto;
 }
+.product-section-wrapper > h1 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  justify-content: center;
+}
