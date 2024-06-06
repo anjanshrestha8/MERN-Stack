@@ -17,6 +17,7 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .navigation > nav > ul > li {
   text-decoration: none;
@@ -26,6 +27,7 @@
   color: #2e2e2e;
   font-size: 16px;
 }
+
 .login {
   display: flex;
   justify-content: center;
@@ -43,4 +45,5 @@
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 300;
+  outline: none;
 }

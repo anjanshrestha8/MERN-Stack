@@ -11,7 +11,7 @@ function Nav() {
           <nav>
             <ul>
               <li>MENU</li>
-              <li>LOCATION</li>
+              <li>PRODUCTS</li>
               <li>ABOUT</li>
               <li>CONTACTS</li>
             </ul>
