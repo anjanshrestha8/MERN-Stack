@@ -3,9 +3,10 @@ import LandingPage from "./Components/LandingPage";
 import Nav from "./Components/Nav";
 import ProductsCard from "./Components/ProductsCard";
 import "./assets/css/components/app.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Try from "./Components/try";
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             <Route path="/products" element={<ProductsCard />}></Route>
+
             <Route path="/about" element={<About />}></Route>
             <Route path="/contacts" element={<Contact />}></Route>
           </Routes>
