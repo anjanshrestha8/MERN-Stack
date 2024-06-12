@@ -1,14 +1,16 @@
 .card-wrapper {
   padding: 13px 13px;
   border-radius: 6px;
-  transition: all 300ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .card-wrapper:hover {
-  background-color: rgb(230, 226, 226);
+  background-color: rgb(238, 222, 222);
 }
 
 .product-wrapper {
-  border-radius: 8px;
+  border: 2px solid grey;
+
+  border-radius: 6px;
   padding: 10px 15px;
   display: grid;
   grid-template-rows: 1fr 0.5fr;
@@ -19,4 +21,11 @@
 
 .product-image {
   width: 10rem;
+}
+
+.title {
+  height: 30px;
+
+  overflow: hidden;
+  text-overflow: ellipsis " [..]";
 }

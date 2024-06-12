@@ -9,7 +9,7 @@ router.get("/", (request, response) => {
 });
 
 router.post("/", (request, response) => {
-  const payload = request.body;
+  let payload = request.body;
   const id = uuidv4();
   payload.id = id;
   console.log(id);
@@ -17,6 +17,23 @@ router.post("/", (request, response) => {
 
   mockData.push({ id, ...payload });
 
-  response.send("user add garxa ");
+  response.send({
+    message: "New User Added",
+    data: payload,
+  });
+});
+
+router.patch("/:id", (request, response) => {
+  console.log(request.params.id);
+
+  const userId = request.params.id;
+  let indexToUpdate = mockData.findIndex((item) => {
+    return item.id === userId;
+  });
+  mockData[indexToUpdate] = {
+    ...mockData[indexToUpdate],
+    ...request.body,
+  };
+  response.send(mockData);
 });
 module.exports = router;
