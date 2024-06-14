@@ -13,9 +13,13 @@ function Try() {
         console.log(data);
         console.log(params.id);
       });
-  }, [params]);
+  }, [params.id]);
 
-  return <></>;
+  return (
+    <>
+      <h1>yo individual products</h1>
+    </>
+  );
 }
 
 export default Try;

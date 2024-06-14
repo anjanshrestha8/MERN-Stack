@@ -39,5 +39,13 @@ router.patch("/:id", (request, response) => {
 
 router.delete("/:id", (request, response) => {
   const userId = request.params.id;
+  mockData = mockData.filter((item, index) => {
+    return item.id !== userId;
+  });
+
+  response.send({
+    message: "User is deleted...",
+    data: mockData,
+  });
 });
 module.exports = router;
