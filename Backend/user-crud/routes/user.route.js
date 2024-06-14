@@ -36,4 +36,8 @@ router.patch("/:id", (request, response) => {
   };
   response.send(mockData);
 });
+
+router.delete("/:id", (request, response) => {
+  const userId = request.params.id;
+});
 module.exports = router;
