@@ -1,7 +1,22 @@
+import { useState } from "react";
 import "../assets/css/components/lp.css";
 
 import shoes from "../assets/images/shoe_image.png";
+import Category from "./Category";
+
 function LandingPage() {
+  const [category, setCategory] = useState([]);
+  const [toggleCategory, setToggleCategory] = useState(false);
+  const fetchCategory = () => {
+    setToggleCategory(true);
+    fetch("https://fakestoreapi.com/products/categories")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setCategory(data);
+      });
+  };
   return (
     <>
       <div className="hero-section-wrapper">
@@ -23,12 +38,26 @@ function LandingPage() {
 
           <div className="button-section">
             <button className="btn btn-bg">Shop Now</button>
-            <button className="btn btn-ot">Category</button>
+            <button className="btn btn-ot" onClick={fetchCategory}>
+              Category
+            </button>
           </div>
         </div>
         <div className="right-side">
           <img src={shoes} alt="" />
         </div>{" "}
+      </div>
+
+      <br />
+      <br />
+
+      <div className="category">
+        {toggleCategory ? <h1> Top Categories</h1> : <h1></h1>}
+      </div>
+      <div className="category-section-wrapper">
+        {category?.map((item, index) => {
+          return <Category title={item} key={index} />;
+        })}
       </div>
     </>
   );

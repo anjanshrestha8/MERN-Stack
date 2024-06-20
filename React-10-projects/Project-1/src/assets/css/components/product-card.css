@@ -2,6 +2,7 @@
   padding: 10px 13px;
   border-radius: 6px;
   transition: all 500ms ease-in-out;
+  margin-bottom: 1rem;
 }
 .card-wrapper:hover {
   background-color: rgb(242, 217, 217);
@@ -24,6 +25,8 @@
 .product-image {
   width: 10rem;
   height: 10rem;
+  display: flex;
+  justify-content: center;
 }
 
 .title {

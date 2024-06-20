@@ -1,0 +1,84 @@
+marquee {
+  overflow: hidden;
+  position: relative;
+  background: #ff0000;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  border-radius: 11px;
+}
+marquee > span {
+  color: yellow;
+}
+
+.wrapper {
+  padding: 5px 11px;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 11px;
+}
+
+.image {
+  display: flex;
+  width: 30rem;
+  height: 30rem;
+  justify-content: center;
+}
+
+.desc {
+  padding: 11px 20px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: white;
+}
+
+label {
+  border: 1px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+h3 {
+  color: rgb(255, 81, 0);
+}
+.rate {
+  color: green;
+}
+.quantity {
+  display: flex;
+  gap: 1rem;
+}
+.quantity > button {
+  width: 10%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-section {
+  width: 50%;
+}
+.buy {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: none;
+  padding: 5px 8px;
+  background-color: rgb(255, 81, 0);
+  color: white;
+  cursor: pointer;
+}
+.cart {
+  width: 100%;
+  font-size: 1rem;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  outline: none;
+  border: none;
+  padding: 5px 8px;
+  background-color: white;
+  border: 3px solid rgb(255, 81, 0);
+  cursor: pointer;
+}

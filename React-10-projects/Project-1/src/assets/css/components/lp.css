@@ -44,15 +44,24 @@
   font-weight: 600;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn-bg {
+  border-radius: 4px;
   background-color: rgb(219, 6, 6);
   color: white;
 }
 
 .btn-ot {
-  border: 1px solid grey;
+  border: 3px solid rgb(219, 6, 6);
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  transition: 300ms all ease-in-out;
+}
+.btn-ot:hover {
+  background-color: rgb(219, 6, 6);
+  color: white;
 }
 .left-side > div:last-child {
   margin-top: 1rem;
@@ -69,4 +78,9 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.category-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
