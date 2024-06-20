@@ -1,31 +1,33 @@
 .card-wrapper {
-  padding: 13px 13px;
+  padding: 10px 13px;
   border-radius: 6px;
   transition: all 500ms ease-in-out;
 }
 .card-wrapper:hover {
-  background-color: rgb(238, 222, 222);
+  background-color: rgb(242, 217, 217);
+  box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75);
 }
 
 .product-wrapper {
   border: 2px solid grey;
-
   border-radius: 6px;
   padding: 10px 15px;
   display: grid;
   grid-template-rows: 1fr 0.5fr;
   gap: 3rem;
   justify-content: center;
+  align-items: center;
   background-color: white;
 }
-
 .product-image {
   width: 10rem;
+  height: 10rem;
 }
 
 .title {
   height: 30px;
-
   overflow: hidden;
   text-overflow: ellipsis " [..]";
 }

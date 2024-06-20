@@ -14,7 +14,7 @@ function ProductsCard(props) {
               <label>{props.title}</label>
             </div>
             <br />
-            <br />
+
             <p>
               {" "}
               $ <span>{props.price}</span>
