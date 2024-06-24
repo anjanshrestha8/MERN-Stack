@@ -1,5 +1,6 @@
 import logo from "../assets/images/brand_logo.png";
 import "../assets/css/components/nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -12,16 +13,16 @@ function Nav() {
           <nav>
             <ul>
               <li>
-                <a href="/">HOME</a>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <a href="/products">PRODUCTS</a>
+                <Link to={"/products"}>Products</Link>
               </li>
               <li>
-                <a href="/about">ABOUT</a>
+                <Link to={"/about"}>About</Link>
               </li>
               <li>
-                <a href="/contacts">CONTACTS</a>
+                <Link to={"/contacts"}>Contacts</Link>
               </li>
             </ul>
           </nav>

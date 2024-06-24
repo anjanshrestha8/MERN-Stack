@@ -3,6 +3,7 @@ import "../assets/css/components/lp.css";
 
 import shoes from "../assets/images/shoe_image.png";
 import Category from "./Category";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const [category, setCategory] = useState([]);
@@ -56,7 +57,13 @@ function LandingPage() {
       </div>
       <div className="category-section-wrapper">
         {category?.map((item, index) => {
-          return <Category title={item} key={index} />;
+          return (
+            <>
+              <Link to={"/category/" + item}>
+                <Category title={item} key={index} />
+              </Link>
+            </>
+          );
         })}
       </div>
     </>
